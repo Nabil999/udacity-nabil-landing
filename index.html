@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <div class="main_container">
+    <div class="header">
+      <img src="logo.png" alt="logo here" width="100" height="65">
+      <h4>Landing Page for Nabil Farouk</h4>
+      <h2>Articles About Reliability Centered Maintenance</h2>
+    </div>
+    <div class="menu">
+      <button id="defaultOpen" class="tablink" onclick="nav(event,'home')">Home Page</button>
+      <button class="tablink" onclick="nav(event,'articles')">Articles</button>  
+      <button class="tablink" onclick="nav(event,'cases')">Case Studies</button>   
+      <button class="tablink" onclick="nav(event,'training')">Training Courses</button>
+      <button class="tablink" onclick="nav(event,'news')">News Feed</button>  
+    </div>
+    <div class="main">
+      <div class="tabcontent" id="home">
+        <h2>What is Reliability Engineering</h2> 
+
+        <p>Reliability engineering is a sub-discipline of systems engineering that emphasizes the ability of equipment to function without failure. Reliability describes the ability of a system or component to function under stated conditions for a specified period of time. Reliability is closely related to availability, which is typically described as the ability of a component or system to function at a specified moment or interval of time.</p>
+        <p>The Reliability function is theoretically defined as the probability of success at time t, which is denoted R(t). This probability is estimated from previous data sets or through reliability testing. Availability, Testability, maintainability and maintenance are often defined as a part of "reliability engineering" in reliability programs. Reliability can play a key role in the cost-effectiveness of systems; for example, a consumer product in many cases will have a higher resale value, if it fails less often.</p>
+      </div>
+      <div class="tabcontent" id="articles">
+        <h2>History</h2> 
+
+        <p>
+          The word reliability can be traced back to 1816, and is first attested to the poet Samuel Taylor Coleridge.[6] Before World War II the term was linked mostly to repeatability; a test (in any type of science) was considered "reliable" if the same results would be obtained repeatedly. In the 1920s, product improvement through the use of statistical process control was promoted by Dr. Walter A. Shewhart at Bell Labs,[7] around the time that Waloddi Weibull was working on statistical models for fatigue. The development of reliability engineering was here on a parallel path with quality. The modern use of the word reliability was defined by the U.S. military in the 1940s, characterizing a product that would operate when expected and for a specified period of time.
+        </p>
+
+      </div>
+      <div class="tabcontent" id="cases">
+        <h2>Case Study 1</h2> 
+
+        <p>
+          The changing generation environment and greater inuence of renewableenergy   has   forced   fossil   fuel   red   power   stations   to   review   their   coststructure. Maintenance being a key contributor, it is necessary to revisitmaintenance  strategies   and  realign   objectives   of  right   maintenance,   atright   time   and   on  right   equipment.   Identication   of  right  equipment   isbased on di!erent business critical attributes but the important ones aresafety, environmental and commercial [ CITATION Mik00 \l 2057 ]. Rankingof   equipment   list   paves   way   to   formulation   of   right   maintenancestrategies to minimise the risk associated with its failure. A right mix ofvarious   maintenance   options   is   selected   depending   upon   operationenvelope, state, redundancy, replacement cost of the equipment. A rightmix of preventive, corrective and condition based  maintenance  followedby  frequency  optimisation  can  reduce  maintenance  cost   signicantly.  Afurther   reduction   in   maintenance   budget   can   be   achieved   throughreduction of maintenance process waste by  streamlining  work processesand increasing   ratio of  planned  to  unplanned  work through   better workplanning.
+        </p>
+
+      </div>
+      <div class="tabcontent" id="training">
+        <h2>Training Courses</h2>
+        <p>Nowadays it is also recognized that the employers should not only select and place personnel, but should promote schemes and provide facilities for their further education and training, so as to increase individual proficiency, and provide recruits for the supervisory and senior grades. For senior staff, refresher courses comprise lectures on specific aspects of their work; they also encourage the interchange of ideas and discussion.</p>
+        <p>
+        The further education of technical grades, craft workers, and apprentices is usually achieved through joint schemes, sponsored by employers in conjunction with the local education authority. Employees should be encouraged to take advantage of these schemes, to improve proficiency and promotion prospects.
+        A normal trade background is often inadequate to cope with the continuing developments in technology. The increasing complexity and importance of maintenance engineering warrants a marked increase in training of machine operators and maintenance craftsmen through formal school courses, reinforced by informed instruction by experienced supervisors.
+        The organization must have a well defined training program for each employee. The following provides guidelines for developing and assessing the effectiveness of the training program:</p>
+        <ul>
+          <li>Evaluate current personnel performance;</li>
+          <li>Assess training need analysis;</li>
+          <li>Design the training program;</li>
+        </ul>
+      </div>
+      <div class="tabcontent" id="news">
+        <h2>News Feed</h2>
+        <p>News Feed is a feature of the social network Facebook. The web feed is the primary system through which users are exposed to content posted on the network. News Feed highlights information that includes profile changes, upcoming events, and birthdays, among other updates. Using a proprietary method, Facebook selects a handful of updates to show users every time they visit their feed, out of an average of 2,000 updates they can potentially receive. Over two billion people use Facebook every month, making the network's News Feed the most viewed and most influential aspect of the news industry</p>
+      </div>
+    </div>
+    <div class="ads">
+      <img src="ads.jpeg" alt="advertise" width="150" height="100%">
+    </div>  
+    <div class="footer">
+      <p>&copy Nabil Farouk Sulieman,,,this is a very poor landing page that i appoligize about, i was very loaded with my current job as a mechanical engineer and i didn't have enough time to prepare for something a little better, i realy need to keep going with this course as step of my career switch</p>
+    </div>
+  </div>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

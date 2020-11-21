@@ -1,0 +1,97 @@
+body {
+    background: rgb(136,203,171);
+    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+.header { 
+    display: flex;
+    justify-content: space-between;
+    background: #0D56A6
+    /*background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);*/
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    grid-area: header;
+    height: 100%;
+
+}
+.menu {
+    grid-area: menu;
+    background: #5385BD;
+    width: 250px;
+    float: left;
+
+}
+/* Style the buttons inside the tab */
+.menu button{
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.menu button:hover {
+  background-color: #0A4281;
+}
+
+/* Create an active/current "tab button" class */
+.menu button.active {
+  background-color: #501DFF;
+}
+h2{
+    color:black;
+}
+.main {
+    grid-area: main;
+    background-color: white;
+    max-width: 100%;
+    /*height: 75%;*/
+}
+.ads {
+    grid-area: ads;
+    background-color: silver;
+}
+.footer {
+    grid-area: footer;
+    background-color: #22202C;
+    color: white;
+}
+div{
+    border: 1px solid green;
+}
+.tabcontent{
+
+}
+
+p {
+  text-indent: 20px;
+  letter-spacing: 2px;
+  color: black;
+  }
+.main_container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header header header header'
+        'menu main main main main main main main ads'
+        'footer footer footer footer footer footer footer footer footer';
+    /*grid-gap: 4px;*/
+    grid-template-rows: 10% auto 10%;
+    background-color: #2196F3;
+    /*padding: 5px;*/
+    height: 100vh;
+}
+.footer p, .header h2{
+    color: white;
+}
+
